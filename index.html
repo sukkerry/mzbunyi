@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jigsaw Bunyi – Pendidikan Muzik Tahun 1 (3.1.1)</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="bg" aria-hidden="true"></div>
+<div id="app">
+  <!-- Pilih aras -->
+  <section class="screen active" id="s-level">
+    <div class="hero"><div class="mascot">🧩</div><h1>Jigsaw Bunyi!</h1></div>
+    <div class="menu" id="levels"></div>
+    <div class="center"><button class="btn w" id="btnInfo">📘 Maklumat DSKP</button></div>
+  </section>
+
+  <!-- Pilih gambar (8 gambar setiap aras) -->
+  <section class="screen" id="s-gal">
+    <div class="bar">
+      <button class="btn pink" id="galBack">⬅ Aras</button>
+      <span class="pill" id="galTitle"></span>
+      <span class="pill" id="galCount"></span>
+    </div>
+    <p class="q">Pilih satu gambar!</p>
+    <div class="gal" id="gal"></div>
+  </section>
+
+  <!-- Main jigsaw -->
+  <section class="screen" id="play">
+    <div class="bar">
+      <button class="btn pink" id="playBack">⬅ Gambar</button>
+      <span class="pill" id="playTitle"></span>
+      <span class="pill" id="playScore">⭐ 0</span>
+    </div>
+    <div class="stage" id="stage"></div>
+  </section>
+</div>
+
+<div class="modal" id="qModal"><div class="box qbox" id="qBox"></div></div>
+
+<div class="modal" id="iModal">
+  <div class="box">
+    <h2>Maklumat DSKP</h2>
+    <h3>Tajuk</h3>
+    <p>3.0 Pengalaman Muzikal<br>3.1 Meneroka bunyi dari pelbagai sumber melalui pengamatan dan pendengaran</p>
+    <h3>Standard kandungan</h3>
+    <p>3.1.1 Meniru bunyi yang didengar: i. haiwan, ii. manusia, iii. kenderaan</p>
+    <h3>Objektif (murid boleh…)</h3>
+    <ul><li>Mengeluarkan bunyi secara bebas</li><li>Mengulang bunyi yang didengar</li><li>Meniru bunyi berdasarkan gambar</li></ul>
+    <h3>Aras jigsaw</h3>
+    <p>Aras 1: 4 keping • Aras 2: 6 keping • Aras 3: 9 keping. Setiap aras ada 8 gambar. Selepas siap, murid mendengar bunyi, meniru, dan menjawab satu soalan.</p>
+    <div class="center"><button class="btn" id="iClose">Tutup ✖</button></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
